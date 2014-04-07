@@ -1,7 +1,7 @@
 # U2.W4: Refactor Cipher Solution
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # 1. Solution
@@ -32,18 +32,18 @@ end
 
 
 # Questions:
-# 1. What is the .to_a method doing?
-# 2. How does the rotate method work? What does it work on?
-# 3. What is `each_char` doing?
-# 4. What does `sample` do?
-# 5. Are there any other methods you want to understand better?
+# 1. What is the .to_a method doing? Returns an array representation of object.
+# 2. How does the rotate method work? What does it work on?  In rotates the elements of the Alphabet array four times.
+# 3. What is `each_char` doing? Passes each character in original sentence to the given block
+# 4. What does `sample` do? It chooses a random element (symbol) from spaces array.
+# 5. Are there any other methods you want to understand better? No
 # 6. Does this code look better or worse than your refactored solution
-#    of the original cipher code? What's better? What's worse?
-# 7. Is this good code? What makes it good? What makes it bad?
+#    of the original cipher code? What's better? What's worse? Using built-in methods like rotate is better. Our original code is shorter.
+# 7. Is this good code? What makes it good? What makes it bad? Yeah it is a good and clean code. Using ruby built-in methods makes it good. Not having comments for what is doing, makes it bad.
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-# Does this return the same thing every time?
+# Does this return the same thing every time? No. The spaces return different symbol each time.
 p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
 p translate_to_cipher("I want cookies")
