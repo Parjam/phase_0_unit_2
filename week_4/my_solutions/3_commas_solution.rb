@@ -1,3 +1,9 @@
+# U2.W4: Separate Numbers with Commas
+
+
+# I worked on this challenge [by myself].
+
+
 # Pseudocode:
 
 # 1. convert the number to a string
