@@ -1,7 +1,7 @@
 # U2.W6: Create a Playlist from Driver Code
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 
 # Pseudocode
@@ -9,6 +9,55 @@
 
 
 # Initial Solution
+
+class Song
+
+	attr_accessor :title, :artist
+
+	def initialize (title, artist)
+		@title = title
+		@artist = artist
+	end
+
+	def play
+		puts "You're listening to #{@title} by #{artist}" 
+	end
+
+end
+
+class Playlist
+
+	attr_accessor :list
+
+	def initialize (list)
+		@list = list.split("")
+	end
+
+	def add (new_song)
+		@list << new_song
+	end
+
+	def remove (song)
+		@list.delete(song)
+	end
+
+	def play_all
+		@list.each do |song|
+			puts "You're listening to #{song}"
+		end
+	end
+
+	def display
+		@list.each do |song|
+			puts song
+		end
+	end
+
+	def num_of_tracks
+		@list.length
+	end
+
+end
 
 
 
@@ -40,6 +89,6 @@ my_playlist.display
 
 
 
-
-
 # Reflection 
+
+# I don't understand what I'm doing wrong that gives me the error "wrong number of arguments."
